@@ -38,7 +38,7 @@ Default:
 }
 ```
 ### `log`
-Create a log file with the given name (default is ``, which means no logging) (*optional*)
+Create a log file with the given name (default is `off`) (*optional*)
 
 ### `logTime`
 Include the time of access in the log file (default is `true`) (*optional*)

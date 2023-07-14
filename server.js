@@ -26,7 +26,7 @@ function deploy(config, ready) {
         config.contentTypes = {};
     }
     if (config.log == undefined || config.log == null) {
-        config.log = "";
+        config.log = "off";
     }
 	if (config.logTime == undefined || config.logTime == null) {
         config.logTime = true;
@@ -51,7 +51,7 @@ function deploy(config, ready) {
     };
 
     server.on('request', (request, response) => {	
-        if (config.log !== "") {
+        if (config.log !== "off") {
 			let now = config.logTime ? `[${formatTime.format(new Date())}] ` : '';
 			let data = '';
 
